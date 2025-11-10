@@ -78,13 +78,11 @@ func resourceVerifiedAccessTrustProvider() *schema.Resource {
 					Schema: map[string]*schema.Schema{
 						"authorization_endpoint": {
 							Type:         schema.TypeString,
-							ForceNew:     true,
 							Optional:     true,
 							ValidateFunc: validation.IsURLWithHTTPS,
 						},
 						names.AttrClientID: {
 							Type:     schema.TypeString,
-							ForceNew: true,
 							Optional: true,
 						},
 						names.AttrClientSecret: {
@@ -94,13 +92,11 @@ func resourceVerifiedAccessTrustProvider() *schema.Resource {
 						},
 						names.AttrIssuer: {
 							Type:         schema.TypeString,
-							ForceNew:     true,
 							Optional:     true,
 							ValidateFunc: validation.IsURLWithHTTPS,
 						},
 						"public_signing_key_endpoint": {
 							Type:         schema.TypeString,
-							ForceNew:     true,
 							Optional:     true,
 							ValidateFunc: validation.IsURLWithHTTPS,
 						},
@@ -110,13 +106,11 @@ func resourceVerifiedAccessTrustProvider() *schema.Resource {
 						},
 						"token_endpoint": {
 							Type:         schema.TypeString,
-							ForceNew:     true,
 							Optional:     true,
 							ValidateFunc: validation.IsURLWithHTTPS,
 						},
 						"user_info_endpoint": {
 							Type:         schema.TypeString,
-							ForceNew:     true,
 							Optional:     true,
 							ValidateFunc: validation.IsURLWithHTTPS,
 						},
@@ -131,13 +125,11 @@ func resourceVerifiedAccessTrustProvider() *schema.Resource {
 					Schema: map[string]*schema.Schema{
 						"authorization_endpoint": {
 							Type:         schema.TypeString,
-							ForceNew:     true,
 							Optional:     true,
 							ValidateFunc: validation.IsURLWithHTTPS,
 						},
 						names.AttrClientID: {
 							Type:     schema.TypeString,
-							ForceNew: true,
 							Optional: true,
 						},
 						names.AttrClientSecret: {
@@ -147,7 +139,6 @@ func resourceVerifiedAccessTrustProvider() *schema.Resource {
 						},
 						names.AttrIssuer: {
 							Type:         schema.TypeString,
-							ForceNew:     true,
 							Optional:     true,
 							ValidateFunc: validation.IsURLWithHTTPS,
 						},
@@ -157,13 +148,11 @@ func resourceVerifiedAccessTrustProvider() *schema.Resource {
 						},
 						"token_endpoint": {
 							Type:         schema.TypeString,
-							ForceNew:     true,
 							Optional:     true,
 							ValidateFunc: validation.IsURLWithHTTPS,
 						},
 						"user_info_endpoint": {
 							Type:         schema.TypeString,
-							ForceNew:     true,
 							Optional:     true,
 							ValidateFunc: validation.IsURLWithHTTPS,
 						},
